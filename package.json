@@ -7,7 +7,9 @@
 		"e2e-setup": "selenium-standalone install",
 		"test": "nightwatch",
 		"link-selenium":
-			"cp -r ~/.config/yarn/global/node_modules/selenium-standalone/.selenium/ ./node_modules/selenium-standalone/"
+			"cp -r ~/.config/yarn/global/node_modules/selenium-standalone/.selenium/ ./node_modules/selenium-standalone/",
+		"install_selenium": "npm install -g selenium-standalone@latest && npm run link-selenium",
+		"postinstall": "npm run link-selenium"
 	},
 	"author": "",
 	"license": "ISC",
