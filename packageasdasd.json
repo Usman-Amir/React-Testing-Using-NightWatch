@@ -1,0 +1,19 @@
+{
+  "name": "usman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e-setup": "selenium-standalone install",
+    "test": "nightwatch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es": "^1.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nightwatch": "^0.9.20",
+    "selenium-standalone": "^6.13.0"
+  }
+}
