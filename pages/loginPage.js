@@ -8,10 +8,17 @@ const loginCommands = {
 	},
 };
 
-const result = [
+export default 
 	{
 		url: "https://dashboard.syncano.io/#/login",
-		commands: [loginCommands],
+		commands: {
+			 login(email, pass) {
+			return this.waitForElementVisible("@emailInput")
+				.setValue("@emailInput", email)
+				.setValue("@passInput", pass)
+				.waitForElementVisible("@loginButton")
+				.click("@loginButton");
+		}},
 		elements: {
 			emailInput: {
 				selector: "input[type=text]",
@@ -23,7 +30,4 @@ const result = [
 				selector: "button[type=submit]",
 			},
 		},
-	},
-];
-
-export default result;
+	};

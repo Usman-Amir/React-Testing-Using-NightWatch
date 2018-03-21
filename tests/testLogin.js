@@ -1,15 +1,9 @@
-export default [{
+export default {
   'User Logs in': (client) => {
-    const loginPage = client.page.loginPage();
-    const instancesPage = client.page.instancesPage();
-
-    loginPage
-      .navigate()
-      .login(process.env.EMAIL, process.env.PASSWORD);
-
-
-    instancesPage.expect.element('@instancesListDescription').to.be.visible;
-
-    client.end();
+    client
+    .url('http://todomvc.com/examples/react/#/')
+    .waitForElementVisible('.header h1',3000)
+    .expect.element('.main').to.not.be.present;
+  client.end();
   }
-}];
+};

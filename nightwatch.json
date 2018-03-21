@@ -8,18 +8,18 @@
 
   "selenium": {
     "start_process": true,
-    "server_path": "./node_modules/selenium-standalone/.selenium/selenium-server/3.8.1-server.jar",
+    "server_path": "node_modules/selenium-standalone/.selenium/selenium-server/3.8.1-server.jar",
     "log_path": "./reports",
     "host": "127.0.0.1",
-    "port": 4747,
+    "port": 9515,
     "cli_args": {
-      "webdriver.chrome.driver": "./node_modules/selenium-standalone/.selenium/chromedriver/2.25-x64-chromedriver"
+      "webdriver.chrome.driver": "node_modules/selenium-standalone/.selenium/chromedriver/chromedriver.exe"
     }
   },
   "test_settings": {
     "default": {
       "launch_url": "https://dashboard.syncano.io",
-      "selenium_port": 4747,
+      "selenium_port": 9515,
       "selenium_host": "localhost",
       "silent": true,
       "screenshots": {
