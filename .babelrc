@@ -1,13 +1,6 @@
 {
-  "presets": [
-    "env",
-    "react",
-    "stage-0"
-  ],
+  "presets": ["es2015"],
   "plugins": [
-    "transform-class-properties",
-    "transform-decorators",
-    "transform-react-constant-elements",
-    "transform-react-inline-elements"
+    "add-module-exports"
   ]
 }
