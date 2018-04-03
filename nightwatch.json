@@ -18,7 +18,7 @@
   },
   "test_settings": {
     "default": {
-      "launch_url": "https://dashboard.syncano.io",
+      "launch_url": "http://localhost/840575/",
       "selenium_port": 9515,
       "selenium_host": "localhost",
       "silent": true,
