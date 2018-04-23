@@ -1,3 +1,5 @@
 export default {
-  waitForConditionTimeout: 5000,
+  waitForConditionTsimeout: 5000,
+  loginUrl: "http://start.exactonline.nl",
+  subscriptionUrl: "http://start.exactonline.nl",
 };
